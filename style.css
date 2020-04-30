@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-border: #ffffff34;
+    --font-staat: 'Staatliches', cursive;
+    --font-os: 'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+
+/* global classes */
+
+.font-staat {
+    font: normal 400 18px var(--font-staat);
+}
+
+.font-os {
+    font: normal 300 18px var(--font-os);
+}
+
+.font-ram {
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-34 {
+    font-size: 34px;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.bgcolor-black {
+    background-color: var(--color-black);
+}
+
+
+/* #global classes */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: left .5s ease;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link {
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+    color: var(--color-white) !important;
+}
+
+#header .toggle-button {
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left {
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+
+/* site-main */
+
+.site-banner .banner-area {
+    background: url(./assets/Banner_image.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(./assets/about.jpg) no-repeat;
+    background-size: 160%;
+    background-position: 20% 5%;
+}
+
+.skill .bars p,
+.site-content .skill .bars span {
+    line-height: 10px;
+}
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+    #header {
+        z-index: 0;
+    }
+}
+
+
+/* #site-main */
+
+
+/* box education */
+
+.containar {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 15px 30px;
+}
+
+.containar .box {
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.containar .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.containar .box:nth-child(1):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.containar .box:nth-child(2):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.containar .box:nth-child(3):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.containar .box:nth-child(4):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.containar .box:nth-child(5):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.containar .box:nth-child(6):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.containar .box:nth-child(7):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.containar .box:nth-child(8):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.containar .box:nth-child(9):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.containar .box:nth-child(10):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.containar .box:nth-child(11):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.containar .box:nth-child(12):before {
+    background: linear-gradient(315deg, #ffc107, #89ff00);
+}
+
+.containar .box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40p);
+}
+
+.box .content h2 {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    margin: 10px;
+    padding: 0;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.09);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box:hover .content h2 {
+    top: -50px;
+}
+
+.box .content img {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    height: 90px;
+    width: 90px;
+}
+
+.box .content h3 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.box .content h4 {
+    margin: 0 0 25px;
+    padding: 10;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/* #box education */
+
+
+/*
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQ9bk9N-kukv8i6fTd2sXE9hXZnj1IIeEQS6f2Knek0JMTkQ/viewform?embedded=true" width="450" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <form action="" class="py-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <textarea name="" id="" cols="30" rows="3" class="form-control my-4" placeholder="Message"></textarea>
+                                    <button type="submit" class="btn btn-dark">Say Hello!</button>
+                                </form>
+*/
