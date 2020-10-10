@@ -26,13 +26,10 @@ function toggle_onclick($win, $navbar, width) {
 
 var typed = new Typed('#typed', {
     strings: [
-        'GIS Analyst',
-        'Spatial and Big Data Analyst',
-        'Data Scientist',
-        'Machine Learning Expert',
-        'Web Developer'
+        'M.Sc. in Remote Sensing and GIS',
+        'IBM Data Science Specialization'
     ],
-    typeSpeed: 50,
+    typeSpeed: 60,
     backSpeed: 50,
     loop: true
 });
@@ -40,12 +37,11 @@ var typed = new Typed('#typed', {
 var typed_2 = new Typed('#typed_2', {
     strings: [
         'GIS Analyst',
-        'Spatial and Big Data Analyst',
+        'Spatial Data Analyst',
         'Data Scientist',
-        'Machine Learning Expert',
         'Web Developer'
     ],
-    typeSpeed: 50,
+    typeSpeed: 60,
     backSpeed: 50,
     loop: true
 });

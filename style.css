@@ -87,7 +87,7 @@ body {
     background: none;
     color: var(--color-black);
     position: fixed;
-    top: 25px;
+    top: 20px;
     right: 20px;
     border: 1px solid var(--color-border);
 }
@@ -231,7 +231,7 @@ body {
 }
 
 .containar .box:nth-child(12):before {
-    background: linear-gradient(315deg, #e91e63, #5d02ff);
+    background: linear-gradient(315deg, #ff0000, #ffc107);
 }
 
 .containar .box:nth-child(13):before {
@@ -239,6 +239,10 @@ body {
 }
 
 .containar .box:nth-child(14):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.containar .box:nth-child(15):before {
     background: linear-gradient(315deg, #ffc107, #89ff00);
 }
 
@@ -351,4 +355,6 @@ body {
                                     <textarea name="" id="" cols="30" rows="3" class="form-control my-4" placeholder="Message"></textarea>
                                     <button type="submit" class="btn btn-dark">Say Hello!</button>
                                 </form>
+                        <p class="description text-uppercase font-os">M.Sc. in Remote Sensing and GIS</p>
+                        <p class="description text-uppercase font-os">IBM Data Science Specialization</p>
 */
